@@ -1,0 +1,27 @@
+git add skill1.txt
+git commit -m "wrote a txt file"
+git status
+git diff
+git log 
+git log skill1.txt
+git log  --pretty=oneline
+git reflog
+cat
+git diff HEAD -- skill1.txt
+git checkout -- skill1.txt
+git reset HEAD skill1.txt
+
+git rm test.txt
+git clone git@github.com:lezhyun/learngit.git
+
+git checkout -b dev
+git brandh dev
+git checkout dev
+
+git branch
+
+
+
+
+
+
