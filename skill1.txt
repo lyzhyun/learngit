@@ -23,6 +23,7 @@ git branch
 git merge dev
 git branch -d dev
 
+dev's modify
 
 
 
