@@ -20,6 +20,9 @@ git checkout dev
 
 git branch
 
+git merge dev
+git branch -d dev
+
 the branch function is very conveniently 
 
 
