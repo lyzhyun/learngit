@@ -15,13 +15,26 @@ git rm test.txt
 git clone git@github.com:lezhyun/learngit.git
 
 git checkout -b dev
-git brandh dev
+git branch dev
 git checkout dev
 
 git branch
 
 git merge dev
 git branch -d dev
+
+git log --graph --pretty=oneline --abbrev-commit
+git merge --no-ff -m "merge this branch"
+
+git stash
+git stash apply
+git stash drop
+git stash pop
+
+git branch -D dev
+
+
+git push origin :dev
 
 dev's modify
 
