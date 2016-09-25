@@ -25,6 +25,10 @@ git branch -d dev
 
 dev's modify
 
+git push origin dev
+
+git checkout -b dev origin/dev
+
 
 
 
