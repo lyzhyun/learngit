@@ -1,0 +1,63 @@
+#!/usr/bin/ruby
+class Test
+	_info="vartify"
+	puts _info
+	
+end
+
+#比较
+# ruby三大基本数据类型 
+#数值型  整数与浮点数  整数包括Fixnum 小于2^30和     Bignum 大于等于2^30两种类型
+
+o=2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2
+k=2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2*2-1
+puts o.class 
+puts k.class
+
+	
+# .class 可以看到变量的数据类型
+
+m=12.03
+puts "m的数据类型:",m.class
+
+a=1..5
+b=1...5
+puts a===1
+puts a===5   #..左右都包
+puts b===1
+puts b===5   #说明...包左不包右
+
+#范围对象
+a=0..59
+b=60...100
+c=b.to_a
+puts "a范围内的最小值:",(a.min).to_s
+puts "a范围内的最大值:",(a.max).to_s
+
+puts b.include?100
+puts "数组c的长度是:"+(c.size).to_s
+
+#三种迭代器方法
+#  regect将范围对象转换成数组并删除符合条件元素
+#  select将范围对象转换成数组只选择满足条件的元素
+#  each 输出迭代范围中的每一个元素  
+
+#符号对象  符号也是一个对象
+#创建符号对象   在对象名前加冒号 ":"
+
+sym="the symbol Object"
+sy=:sym
+puts sy==:"sym"  #判断sy 是否等于字符串 "sym"对应的符号对象
+
+#字符串可以与符号对象相互转换  通过to_s 和to_sym即可实现
+str="this is a String"
+sym=:"this is a symbol Object"
+ex="this is a symbol Object"
+puts str.to_sym==sym   #false
+puts sym.to_s==str    #false
+puts ex.to_sym==sym  #true
+puts sym.to_s==ex   #true
+#还可以通过%类创建符号对象
+sym2=%s{ex}
+sym3=:ex
+puts sym3==sym2
